@@ -69,9 +69,9 @@ The **travel agency** have **employees** who will the users of our system.
 
 1. All seats have already been booked when the flight is selected.A
    a. TAE informs the customer that the flight is unavailable.
-2. Sebastian is unavailable (busy simping)(mental breakdown)
+2. Sebastian is unavailable 
    1. TAE contacts developers to restart/fix system.
-3. Customer doesnt speak englando (no hablo englando)
+3. Customer doesnt speak englando  
 4. Customer tells TAE they have changed their mind about travelling.
    1. TAE cancels the process.
 5. TAE enters the wrong information.  
