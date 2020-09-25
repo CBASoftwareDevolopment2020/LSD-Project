@@ -27,19 +27,19 @@
 **Primary Actor**: Travel Agency Employee (TAE)  
 **Stakeholders and Interests**:
 
-- TAE: Wants an easy to use system, without errors, so they can book flights from multiple airline carriers for customers with ease.
-- Travel Agency: Wants a broader selection of flights to offer their customers.
-- Customer: Wants an easy way to book trips that might contain flights from multiple flight carriers.
-- Airline Carriers: Wants more exposure to their available flights.
+-   TAE: Wants an easy to use system, without errors, so they can book flights from multiple airline carriers for customers with ease.
+-   Travel Agency: Wants a broader selection of flights to offer their customers.
+-   Customer: Wants an easy way to book trips that might contain flights from multiple flight carriers.
+-   Airline Carriers: Wants more exposure to their available flights.
 
 **Preconditions:** TAE is logged in and authenticated. TAE has together with the customer, searched for ideal flights for their booking and has a list of flights.  
 **Success Guarantee (Postconditions):** Booking is saved. Flight seat availability is updated. Booking confirmation is generated.  
 **Main Success Scenario:**
 
 1. TAE selects travel details
-2. TAE clicks on a "make booking" button.
+2. TAE initiates booking.
 3. TAE enters customer personal information. This includes: e-ticket identification and email, passenger names and their addresses, phones numbers, date of birth, gender.
-4. Clicks confirm order.
+4. Confirms order.
 5. Order confirmation is sent to the customer's email.
 
 **Extensions:**
@@ -47,19 +47,19 @@
 1. All seats have already been booked when the flight is selected.A
    a. TAE informs the customer that the flight is unavailable.
 2. Sebastian is unavailable (busy simping)(mental breakdown)
-   1. TAE contacts developers to restart/fix system.
+    1. TAE contacts developers to restart/fix system.
 3. Customer doesnt speak englando (no hablo englando)
 4. Customer tells TAE they have changed their mind about travelling.
-   1. TAE cancels the process.
+    1. TAE cancels the process.
 5. TAE enters the wrong information.  
    a. Customer can't travel because of the wrong information, and needs to be reimbursed.  
    b. Customer realises the mistake in the booking confirmation and contacts the Travel Agency to fix the mistake. 1. TAE updates the booking with the correct information.
 
 **Special Requirements:**
 
-- Computer with internet access.
-- Phone
-- TAE has an account for the service.
+-   Computer with internet access.
+-   Phone
+-   TAE has an account for the service.
 
 **Technology and Data Variations List:**
 

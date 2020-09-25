@@ -3,7 +3,6 @@
 ## Glossary
 
 hey loser
-Sebbe <3 SUC-King \\||//
 
 | Word                                            | LDM | Description |
 | :---------------------------------------------- | :-: | :---------- |
@@ -58,5 +57,3 @@ Sebbe <3 SUC-King \\||//
 | Persons                                         |  x  |             |
 | Error message                                   |     |             |
 | Legs                                            |  x  |             |
-
-
