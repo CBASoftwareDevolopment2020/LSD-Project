@@ -8,7 +8,7 @@
 
 ## Logic Data Model
 
-![Logic Data Model](LDM.png)
+![Logic Data Model](./uml/images/LDM.png)
 
 ### LDM Decription
 
@@ -20,7 +20,7 @@ The **travel agency** have **employees** who will the users of our system.
 
 ## Use Case Diagram
 
-![Use Case Diagram](use_case_diagram.png)
+![Use Case Diagram](./uml/images/use_case_diagram.png)
 
 #
 
@@ -91,4 +91,4 @@ The **travel agency** have **employees** who will the users of our system.
 
 ### Sub-system Sequence Diagram UC1
 
-![](SSSD_booking.png)
+![](./uml/images/SSSD_booking.png)
