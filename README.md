@@ -1,6 +1,6 @@
 # LSD-Project
 
-[Case 1](https://datsoftlyngby.github.io/soft2020fall/resources/e12f05a6-case-1.pdf)
+[Case I, an Airline GDS Global Distribution System](https://datsoftlyngby.github.io/soft2020fall/resources/e12f05a6-case-1.pdf)
 
 -   [Assignment 1 - Logical Data Model](https://datsoftlyngby.github.io/soft2020fall/resources/535325c7-01-logical-data-model.pdf)
 -   [Assignment 2 - Use Case Model](https://datsoftlyngby.github.io/soft2020fall/resources/a9edbcd7-02-use-case-model.pdf)
@@ -8,7 +8,7 @@
 
 ## References to related repos
 
-- [Contract](https://github.com/CBASoftwareDevolopment2020/LSD-Contract)
+-   [Contract](https://github.com/CBASoftwareDevolopment2020/LSD-Contract)
 
 ## Logic Data Model
 
