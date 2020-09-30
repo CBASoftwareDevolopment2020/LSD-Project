@@ -95,4 +95,4 @@ The **travel agency** have **employees** who will the users of our system.
 
 ### Sub-system Sequence Diagram UC1
 
-![](./uml/images/SSSD_booking.png)
+![](./uml/images/SSSD_make_booking.png)
