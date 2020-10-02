@@ -24,6 +24,8 @@
 
 ## Use Case UC1: Make booking
 
+![SSSD diagram of make booking use case](uml/images/sssd_make_booking.png)
+
 **Primary Actor**: Travel Agency Employee (TAE)  
 **Stakeholders and Interests**:
 
@@ -45,15 +47,15 @@
 **Extensions:**
 
 1. All seats have already been booked when the flight is selected.
-    a. TAE informs the customer that the flight is unavailable.
+   a. TAE informs the customer that the flight is unavailable.
 2. Sebastian is unavailable (busy simping)(mental breakdown)
-    a. TAE contacts developers to restart/fix system.
+   a. TAE contacts developers to restart/fix system.
 3. Customer doesnt speak englando (no hablo englando)
 4. Customer tells TAE they have changed their mind about travelling.
-    a. TAE cancels the process.
+   a. TAE cancels the process.
 5. TAE enters the wrong information.  
-    a. Customer can't travel because of the wrong information, and needs to be reimbursed.  
-    b. Customer realises the mistake in the booking confirmation and contacts the Travel Agency to fix the mistake. 1. TAE updates the booking with the correct information.
+   a. Customer can't travel because of the wrong information, and needs to be reimbursed.  
+   b. Customer realises the mistake in the booking confirmation and contacts the Travel Agency to fix the mistake. 1. TAE updates the booking with the correct information.
 
 **Special Requirements:**
 
@@ -65,21 +67,36 @@
 
 **Frequency of Occurence:** Could be nearly continous.
 
+## Use Case UC2: Show time schedule between two airports on a given day
 
+![Use Case UC2: Show time schedule between two airports on a given day](uml/images/SSSD_show_time_schedule.png)
+**Primary Actor**: Travel Agency Employee (TAE)
+
+**Preconditions:** TAE is logged in and authenticated.
+**Success Guarantee (Postconditions):** A list of flights between two airports on a given day is shown.
+
+**Main Success Scenario:**
+
+1. TAE enters two airports, and a date.
+2. TAE submits the information.
+3. A list of flights between the two aiports, on the given day is shown. Information includes carrier information, departure and arrival times and number of free seats.
+
+**Alternative flow:**  
+3x. There's no flights between the two aiports.  
+ a. A message is shown saying that there are no flights between the two airports on the given day.
+
+---
 
 ## Use Case UC3: See Booking
 
+![SSSD of see booking use case](uml/images/sssd_see_booking.png)
+
 **Primary Actor**: Travel Agency Employee (TAE)
 
-**Stakeholders and Interests**:
+**Preconditions:**
 
-- TAE: Wants an easy to use system, so they can find bookings from multiple airline carriers for customers with ease.
-- Customer: Wants an easy way to see their bookings.
-
-**Preconditions:** 
-
-- TAE is logged in and authenticated. 
-- Has received the booking identification to look up the order in question
+-   TAE is logged in and authenticated.
+-   Has received the booking identification to look up the order in question
 
 **Success Guarantee (Postconditions):**
 
@@ -87,60 +104,38 @@ TAE receives the booking information
 
 **Main Success Scenario:**
 
-1. TAE enters booking identification details
+1. TAE enters Passenger Name Record.
 2. TAE searches for the booking
 
-**Extensions:**
+**Alternative Flow:**
 
 1.1 Booking doesn't exist
-    a. Informs the customer that booking does not exist
+a. Informs the customer that booking does not exist
 
-**Special Requirements:**
-
-**Technology and Data Variations List:**
-
-**Frequency of Occurence:** 
+**Frequency of Occurence:**
 
 When TAE wants to see a booking (eg. cancel a booking)
 
-
-
 ## Use Case UC4: Cancel Booking
 
-**Primary Actor**: Travel Agency Employee (TAE)  
+![](./uml/images/sssd_cancel_booking.png)
 
-**Stakeholders and Interests**:
+**Primary Actor**: Travel Agency Employee (TAE)
 
-- TAE: Wants an easy to use system, so they can cancel bookings from multiple airline carriers for customers with ease.
-- Customer: Wants an easy way to cancel bookings.
+**Preconditions:**
 
-**Preconditions:** 
-
-- TAE is logged in and authenticated. 
-- TAE has already received a request from the customer to cancel a booking.
-- TAE has received a booking based on a Bookingidentifier (UC3) <--- CHECK LATER :)
+-   TAE is logged in and authenticated.
+-   TAE has already received a request from the customer to cancel a booking.
+-   TAE has selected a booking based on a Passenger Name Record (UC3)
 
 **Success Guarantee (Postconditions):**
 
-Booking is cancelled. Flight seat availability is updated. Cancel Booking confirmation is generated.  
+Booking is cancelled. Flight seat availability is updated. Cancel Booking confirmation is generated.
 
 **Main Success Scenario:**
 
-1. TAE validates booking
-2. TAE cancels booking
+1. TAE cancels booking
 
-**Extensions:**
-
-1.1 Customer tries to cancel mid trip
-    a. Informs the customer that it's not possible
-
-**Special Requirements:**
-
-**Technology and Data Variations List:**
-
-**Frequency of Occurence:** 
+**Frequency of Occurence:**
 
 Whenever a customer requests to cancel a booking
-
-
-
