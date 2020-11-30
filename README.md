@@ -8,7 +8,7 @@
 
 ## References to related repos
 
--   [Contract](https://github.com/CBASoftwareDevolopment2020/LSD-Contract)
+-   [Contract](https://dev.azure.com/teamd-backend/lsd/_git/LSD-Contract)
 
 ## Logic Data Model
 
