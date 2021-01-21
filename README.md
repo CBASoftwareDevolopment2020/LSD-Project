@@ -70,7 +70,7 @@ The **travel agency** have **employees** who will the users of our system.
 2. TAE initiates booking.
 3. TAE enters customer personal information. This includes: e-ticket identification and email, passenger names and their addresses, phones numbers, date of birth, gender.
 4. Confirms order.
-5. Order confirmation is sent to the customer's email. **<- Skal vi have denne? virker som ude for scope af vores opgave?**
+5. Order confirmation is sent to the customer's email.
 
 **Extensions:**
 
